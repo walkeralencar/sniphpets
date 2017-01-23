@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>File Source for Funções para Javascript</title>
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+	<td class="header-top-left"><img src="../media/logo.png" border="0" alt="phpDocumentor " /></td>
+    <td class="header-top-right">waFunctions<br /><div class="header-top-right-subpackage"></div></td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td colspan="2" class="header-menu">
+      
+                        
+                      		[ <a href="../classtrees_waFunctions.html" class="menu">class tree: waFunctions</a> ]
+		[ <a href="../elementindex_waFunctions.html" class="menu">index: waFunctions</a> ]
+            [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="195" class="menu">
+		<div class="package-title">waFunctions</div>
+      <b>Packages:</b><br />
+  <div class="package">
+              <a href="../li_waFunctions.html">waFunctions</a><br />
+      	</div>
+      <br />
+                        <br />
+                      </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1 align="center">Source for file Funções para Javascript</h1>
+<p>Documentation is available at <a href="../waFunctions/_javascripts.php.html">Funções para Javascript</a></p>
+<div class="src-code"><span class="php">
+<ol><li><div class="src-line"><a name="a1"></a><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a2"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a3"></a><span class="src-doc">&nbsp;*&nbsp;Funções&nbsp;para&nbsp;javascript.</span></div></li>
+<li><div class="src-line"><a name="a4"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a5"></a><span class="src-doc">&nbsp;*&nbsp;Facilita&nbsp;o&nbsp;uso&nbsp;de&nbsp;javascript&nbsp;no&nbsp;meio&nbsp;do&nbsp;código&nbsp;php,&nbsp;seja&nbsp;montando&nbsp;um&nbsp;alert,&nbsp;redirect,&nbsp;ou&nbsp;back.</span></div></li>
+<li><div class="src-line"><a name="a6"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a7"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@package</span><span class="src-doc">&nbsp;&nbsp;&nbsp;waFunctions</span></div></li>
+<li><div class="src-line"><a name="a8"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@name</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Funções&nbsp;para&nbsp;Javascript</span></div></li>
+<li><div class="src-line"><a name="a9"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@author</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="src-doc-inlinetag">{@link&nbsp;http://www.walkeralencar.com&nbsp;Walker&nbsp;de&nbsp;Alencar}</span><span class="src-doc">&nbsp;&lt;contato@walkeralencar.com&gt;</span></div></li>
+<li><div class="src-line"><a name="a10"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@copyright</span><span class="src-doc">&nbsp;2007-2008&nbsp;(c)&nbsp;-&nbsp;</span><span class="src-doc-inlinetag">{@link&nbsp;http://www.walkeralencar.com&nbsp;Walker&nbsp;de&nbsp;Alencar}</span><span class="src-doc">&nbsp;&lt;contato@walkeralencar.com&gt;</span></div></li>
+<li><div class="src-line"><a name="a11"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@license</span><span class="src-doc">&nbsp;&nbsp;&nbsp;http://www.gnu.org/licenses/lgpl.txt&nbsp;LGPL</span></div></li>
+<li><div class="src-line"><a name="a12"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@link</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.walkeralencar.com/</span></div></li>
+<li><div class="src-line"><a name="a13"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@link</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://code.google.com/p/sniphpets</span></div></li>
+<li><div class="src-line"><a name="a14"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@version</span><span class="src-doc">&nbsp;&nbsp;&nbsp;2.0&nbsp;beta&nbsp;UTF-8</span></div></li>
+<li><div class="src-line"><a name="a15"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a16"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a17"></a><span class="src-doc">&nbsp;*&nbsp;Escreve&nbsp;o&nbsp;javascript&nbsp;de&nbsp;redirecionamento&nbsp;para&nbsp;voltar&nbsp;à&nbsp;página&nbsp;anterior;</span></div></li>
+<li><div class="src-line"><a name="a18"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a19"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">bool&nbsp;</span><span class="src-doc-var">$onScript&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a20"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se&nbsp;true,&nbsp;escreve&nbsp;somente&nbsp;a&nbsp;linha&nbsp;de&nbsp;redirecionamento,&nbsp;se&nbsp;falso,&nbsp;escreve&nbsp;o&nbsp;corpo&nbsp;do&nbsp;javascript.</span></div></li>
+<li><div class="src-line"><a name="a21"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a22"></a><span class="src-key">function&nbsp;</span><a href="../waFunctions/_javascripts.php.html#functionjsBack">jsBack</a><span class="src-sym">(</span><span class="src-var">$onScript&nbsp;</span>=&nbsp;<span class="src-id">false</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a23"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a24"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$tmpRedirect&nbsp;</span>=&nbsp;<span class="src-str">&quot;\thistory.back();\n&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a25"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a26"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$onScript&nbsp;</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a27"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-var">$tmpRedirect</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a28"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}&nbsp;</span><span class="src-key">else&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a29"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;</span><span class="src-str">&lt;script&nbsp;language=\&quot;javascript\&quot;&gt;\n{<span class="src-var">$tmpRedirect</span><span class="src-sym">}</span>&lt;/script&gt;</span><span class="src-str">&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">exit</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a31"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a32"></a><span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a33"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a34"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a35"></a><span class="src-doc">&nbsp;*&nbsp;Escreve&nbsp;o&nbsp;javascript&nbsp;de&nbsp;redirecionamento&nbsp;para&nbsp;uma&nbsp;página.</span></div></li>
+<li><div class="src-line"><a name="a36"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a37"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$redirectToPage&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a38"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Redirecionar&nbsp;para&nbsp;o&nbsp;link.</span></div></li>
+<li><div class="src-line"><a name="a39"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">bool&nbsp;</span><span class="src-doc-var">$needParent&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a40"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se&nbsp;informado&nbsp;adiciona&nbsp;[parent.]&nbsp;só&nbsp;será&nbsp;necessário&nbsp;caso&nbsp;esteja&nbsp;usando&nbsp;iFrame.</span></div></li>
+<li><div class="src-line"><a name="a41"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">bool&nbsp;</span><span class="src-doc-var">$onScript&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a42"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se&nbsp;true,&nbsp;apenas&nbsp;escreve&nbsp;somente&nbsp;a&nbsp;linha&nbsp;de&nbsp;redirecionamento,&nbsp;se&nbsp;falso,&nbsp;escreve&nbsp;o&nbsp;corpo&nbsp;do&nbsp;javascript.</span></div></li>
+<li><div class="src-line"><a name="a43"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a44"></a><span class="src-key">function&nbsp;</span><a href="../waFunctions/_javascripts.php.html#functionjsRedirect">jsRedirect</a><span class="src-sym">(&nbsp;</span><span class="src-var">$redirectToPage</span><span class="src-sym">,&nbsp;</span><span class="src-var">$needParent&nbsp;</span>=&nbsp;<span class="src-id">false</span><span class="src-sym">,&nbsp;</span><span class="src-var">$onScript&nbsp;</span>=&nbsp;<span class="src-id">false&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a45"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a46"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$tmpRedirect&nbsp;</span>=&nbsp;<span class="src-str">&quot;\t&quot;&nbsp;</span>.&nbsp;<span class="src-sym">(&nbsp;(&nbsp;</span><span class="src-var">$needParent&nbsp;</span><span class="src-sym">)&nbsp;</span>?&nbsp;<span class="src-str">&quot;parent.&quot;&nbsp;</span>:&nbsp;<span class="src-str">&quot;&quot;&nbsp;</span><span class="src-sym">)&nbsp;</span>.&nbsp;<span class="src-str">&quot;</span><span class="src-str">document.location.href='{<span class="src-var">$redirectToPage</span><span class="src-sym">}</span>';\n</span><span class="src-str">&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a47"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a48"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$onScript&nbsp;</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a49"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-var">$tmpRedirect</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a50"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}&nbsp;</span><span class="src-key">else&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a51"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;</span><span class="src-str">&lt;script&nbsp;language=\&quot;javascript\&quot;&gt;\n{<span class="src-var">$tmpRedirect</span><span class="src-sym">}</span>&lt;/script&gt;</span><span class="src-str">&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a52"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">exit</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a53"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a54"></a><span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a55"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a56"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a57"></a><span class="src-doc">&nbsp;*&nbsp;Escreve&nbsp;o&nbsp;javascript&nbsp;para&nbsp;uma&nbsp;mensagem&nbsp;de&nbsp;alerta.</span></div></li>
+<li><div class="src-line"><a name="a58"></a><span class="src-doc">&nbsp;*&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a59"></a><span class="src-doc">&nbsp;*&nbsp;Podendo&nbsp;escrever&nbsp;um&nbsp;history.back()&nbsp;ou&nbsp;redirecionar&nbsp;para&nbsp;uma&nbsp;página&nbsp;depois&nbsp;de&nbsp;clicado&nbsp;OK.</span></div></li>
+<li><div class="src-line"><a name="a60"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a61"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$message&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a62"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;contendo&nbsp;a&nbsp;Mensagem.</span></div></li>
+<li><div class="src-line"><a name="a63"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$redirectToPage&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a64"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se&nbsp;informado&nbsp;redireciona&nbsp;a&nbsp;página&nbsp;após&nbsp;clicar&nbsp;OK&nbsp;no&nbsp;Alerta.</span></div></li>
+<li><div class="src-line"><a name="a65"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se&nbsp;passar&nbsp;como&nbsp;valor:&nbsp;'back',&nbsp;volta&nbsp;para&nbsp;pagina&nbsp;anterior&nbsp;após&nbsp;clicar&nbsp;OK&nbsp;no&nbsp;Alerta</span></div></li>
+<li><div class="src-line"><a name="a66"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">bool&nbsp;</span><span class="src-doc">&nbsp;&nbsp;</span><span class="src-doc-var">$needParent&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a67"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se&nbsp;informado&nbsp;adiciona&nbsp;[parent.]&nbsp;só&nbsp;será&nbsp;necessário&nbsp;caso&nbsp;esteja&nbsp;usando&nbsp;iFrame.</span></div></li>
+<li><div class="src-line"><a name="a68"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a69"></a><span class="src-key">function&nbsp;</span><a href="../waFunctions/_javascripts.php.html#functionjsAlert">jsAlert</a><span class="src-sym">(&nbsp;</span><span class="src-var">$message</span><span class="src-sym">,&nbsp;</span><span class="src-var">$redirectToPage&nbsp;</span>=&nbsp;<span class="src-id">NULL</span><span class="src-sym">,&nbsp;</span><span class="src-var">$needParent&nbsp;</span>=&nbsp;<span class="src-id">false&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a70"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a71"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$bExit&nbsp;</span>=&nbsp;<span class="src-id">false</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a72"></a>&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;&lt;script&nbsp;language=\&quot;javascript\&quot;&gt;\n&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a73"></a>&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;</span><span class="src-str">\talert('{<span class="src-var">$message</span><span class="src-sym">}</span>');\n</span><span class="src-str">&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a74"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$redirectToPage&nbsp;</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a75"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$bExit&nbsp;</span>=&nbsp;<span class="src-id">true</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a76"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$redirectToPage&nbsp;</span>===&nbsp;<span class="src-str">'back'&nbsp;</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a77"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../waFunctions/_javascripts.php.html#functionjsBack">jsBack</a><span class="src-sym">(&nbsp;</span><span class="src-id">true&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a78"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}&nbsp;</span><span class="src-key">else&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a79"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../waFunctions/_javascripts.php.html#functionjsRedirect">jsRedirect</a><span class="src-sym">(&nbsp;</span><span class="src-var">$redirectToPage</span><span class="src-sym">,&nbsp;</span><span class="src-var">$needParent</span><span class="src-sym">,&nbsp;</span><span class="src-id">true&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a80"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a81"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a82"></a>&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;&lt;/script&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a83"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$bExit&nbsp;</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a84"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">exit</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a85"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a86"></a><span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a87"></a><span class="src-php">?&gt;</span></div></li>
+</ol>
+</span></div>
+        <div class="credit">
+		    <hr class="separator" />
+		    Documentation generated on Mon, 16 Feb 2009 20:44:15 -0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

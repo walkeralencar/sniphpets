@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>File Source for Funções para Datas</title>
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+	<td class="header-top-left"><img src="../media/logo.png" border="0" alt="phpDocumentor " /></td>
+    <td class="header-top-right">waFunctions<br /><div class="header-top-right-subpackage"></div></td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td colspan="2" class="header-menu">
+      
+                        
+                      		[ <a href="../classtrees_waFunctions.html" class="menu">class tree: waFunctions</a> ]
+		[ <a href="../elementindex_waFunctions.html" class="menu">index: waFunctions</a> ]
+            [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="195" class="menu">
+		<div class="package-title">waFunctions</div>
+      <b>Packages:</b><br />
+  <div class="package">
+              <a href="../li_waFunctions.html">waFunctions</a><br />
+      	</div>
+      <br />
+                        <br />
+                      </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1 align="center">Source for file Funções para Datas</h1>
+<p>Documentation is available at <a href="../waFunctions/_date.php.html">Funções para Datas</a></p>
+<div class="src-code"><span class="php">
+<ol><li><div class="src-line"><a name="a1"></a><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a2"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a3"></a><span class="src-doc">&nbsp;*&nbsp;Funções&nbsp;para&nbsp;Datas.</span></div></li>
+<li><div class="src-line"><a name="a4"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a5"></a><span class="src-doc">&nbsp;*&nbsp;Voltada&nbsp;para&nbsp;auxilio&nbsp;de&nbsp;conversoes&nbsp;de&nbsp;datas,&nbsp;e&nbsp;algumas&nbsp;manipulacoes&nbsp;de&nbsp;dados&nbsp;em&nbsp;formulário.</span></div></li>
+<li><div class="src-line"><a name="a6"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a7"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@package</span><span class="src-doc">&nbsp;&nbsp;&nbsp;waFunctions</span></div></li>
+<li><div class="src-line"><a name="a8"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@name</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Funções&nbsp;para&nbsp;Datas</span></div></li>
+<li><div class="src-line"><a name="a9"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@author</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="src-doc-inlinetag">{@link&nbsp;http://www.walkeralencar.com&nbsp;Walker&nbsp;de&nbsp;Alencar}</span><span class="src-doc">&nbsp;&lt;contato@walkeralencar.com&gt;</span></div></li>
+<li><div class="src-line"><a name="a10"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@copyright</span><span class="src-doc">&nbsp;2007-2008&nbsp;(c)&nbsp;-&nbsp;</span><span class="src-doc-inlinetag">{@link&nbsp;http://www.walkeralencar.com&nbsp;Walker&nbsp;de&nbsp;Alencar}</span><span class="src-doc">&nbsp;&lt;contato@walkeralencar.com&gt;</span></div></li>
+<li><div class="src-line"><a name="a11"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@license</span><span class="src-doc">&nbsp;&nbsp;&nbsp;http://www.gnu.org/licenses/lgpl.txt&nbsp;LGPL</span></div></li>
+<li><div class="src-line"><a name="a12"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@link</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.walkeralencar.com/</span></div></li>
+<li><div class="src-line"><a name="a13"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@link</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://code.google.com/p/sniphpets</span></div></li>
+<li><div class="src-line"><a name="a14"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@version</span><span class="src-doc">&nbsp;&nbsp;&nbsp;2.0&nbsp;beta&nbsp;UTF-8</span></div></li>
+<li><div class="src-line"><a name="a15"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a16"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a17"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a18"></a><span class="src-doc">&nbsp;*&nbsp;Converte&nbsp;datas&nbsp;no&nbsp;formato:&nbsp;AAAA-MM-DD&nbsp;para&nbsp;DD/MM/AAAA.&nbsp;Porém,&nbsp;não&nbsp;faz&nbsp;validações.</span></div></li>
+<li><div class="src-line"><a name="a19"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a20"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$pDate&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a21"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;com&nbsp;a&nbsp;Data&nbsp;no&nbsp;formato:&nbsp;AAAA-MM-DD.</span></div></li>
+<li><div class="src-line"><a name="a22"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@return&nbsp;</span><span class="src-doc-type">string&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a23"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;com&nbsp;a&nbsp;Data&nbsp;no&nbsp;formato:&nbsp;DD/MM/AAAA.</span></div></li>
+<li><div class="src-line"><a name="a24"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a25"></a><span class="src-key">function&nbsp;</span><a href="../waFunctions/_date.php.html#functionDateUsToBr">DateUsToBr</a><span class="src-sym">(&nbsp;</span><span class="src-var">$pDate&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a26"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a27"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><a href="http://www.php.net/date">date</a><span class="src-sym">(&nbsp;</span><span class="src-str">'d/m/Y'</span><span class="src-sym">,&nbsp;</span><a href="http://www.php.net/strtotime">strtotime</a><span class="src-sym">(&nbsp;</span><span class="src-var">$pDate&nbsp;</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a28"></a><span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a29"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a30"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a31"></a><span class="src-doc">&nbsp;*&nbsp;Converte&nbsp;datas&nbsp;no&nbsp;formato:&nbsp;DD/MM/AAAA&nbsp;para&nbsp;AAAA-MM-DD.&nbsp;Porém,&nbsp;não&nbsp;faz&nbsp;validações.</span></div></li>
+<li><div class="src-line"><a name="a32"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a33"></a><span class="src-doc">&nbsp;*&nbsp;Se&nbsp;for&nbsp;informada&nbsp;uma&nbsp;string&nbsp;em&nbsp;branco&nbsp;retorna:&nbsp;'0000-00-00'</span></div></li>
+<li><div class="src-line"><a name="a34"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a35"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$pDate&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a36"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;com&nbsp;a&nbsp;Data&nbsp;no&nbsp;formato:&nbsp;DD/MM/AAAA.</span></div></li>
+<li><div class="src-line"><a name="a37"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@return&nbsp;</span><span class="src-doc-type">string&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a38"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;com&nbsp;a&nbsp;Data&nbsp;no&nbsp;formato:&nbsp;AAAA-MM-DD.</span></div></li>
+<li><div class="src-line"><a name="a39"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a40"></a><span class="src-key">function&nbsp;</span><a href="../waFunctions/_date.php.html#functionDateBrToUs">DateBrToUs</a><span class="src-sym">(&nbsp;</span><span class="src-var">$pDate&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a41"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a42"></a>&nbsp;&nbsp;<span class="src-var">$tmpDate&nbsp;</span>=&nbsp;<a href="http://www.php.net/implode">implode</a><span class="src-sym">(&nbsp;</span><span class="src-str">'-'</span><span class="src-sym">,&nbsp;</span><a href="http://www.php.net/array_reverse">array_reverse</a><span class="src-sym">(&nbsp;</span><a href="http://www.php.net/explode">explode</a><span class="src-sym">(&nbsp;</span><span class="src-str">'/'</span><span class="src-sym">,&nbsp;</span><span class="src-var">$pDate&nbsp;</span><span class="src-sym">)&nbsp;)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a43"></a>&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-sym">(&nbsp;</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(&nbsp;</span><span class="src-var">$tmpDate</span><span class="src-sym">,&nbsp;</span><span class="src-key">array</span><span class="src-sym">(&nbsp;</span><span class="src-str">'--'&nbsp;</span><span class="src-sym">,&nbsp;</span><span class="src-str">''&nbsp;</span><span class="src-sym">)&nbsp;)&nbsp;</span>?&nbsp;<span class="src-str">'0000-00-00'&nbsp;</span>:&nbsp;<span class="src-var">$tmpDate&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a44"></a><span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a45"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a46"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a47"></a><span class="src-doc">&nbsp;*&nbsp;Nome&nbsp;do&nbsp;Mês&nbsp;informado&nbsp;em&nbsp;português.</span></div></li>
+<li><div class="src-line"><a name="a48"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a49"></a><span class="src-doc">&nbsp;*&nbsp;Ex.:</span></div></li>
+<li><div class="src-line"><a name="a50"></a><span class="src-doc">&nbsp;*&nbsp;&lt;code&gt;</span></div></li>
+<li><div class="src-line"><a name="a51"></a><span class="src-doc">&nbsp;*&nbsp;echo&nbsp;getMes(9);&nbsp;//&nbsp;retorna:&nbsp;Setembro</span></div></li>
+<li><div class="src-line"><a name="a52"></a><span class="src-doc">&nbsp;*&nbsp;&lt;/code&gt;</span></div></li>
+<li><div class="src-line"><a name="a53"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a54"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">int&nbsp;</span><span class="src-doc-var">$mes&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a55"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numero&nbsp;representando&nbsp;o&nbsp;Mês&nbsp;que&nbsp;se&nbsp;deseja.</span></div></li>
+<li><div class="src-line"><a name="a56"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Valores&nbsp;entre:&nbsp;1&nbsp;e&nbsp;12.</span></div></li>
+<li><div class="src-line"><a name="a57"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@return&nbsp;</span><span class="src-doc-type">string&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a58"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nome&nbsp;do&nbsp;Mês&nbsp;em&nbsp;português.</span></div></li>
+<li><div class="src-line"><a name="a59"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a60"></a><span class="src-key">function&nbsp;</span><a href="../waFunctions/_date.php.html#functionstrMes">strMes</a><span class="src-sym">(&nbsp;</span><span class="src-var">$mes&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a61"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a62"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$aMes&nbsp;</span>=&nbsp;<span class="src-key">array</span><span class="src-sym">(</span></div></li>
+<li><div class="src-line"><a name="a63"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-num">1&nbsp;</span>=&gt;&nbsp;<span class="src-str">'Janeiro'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a64"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'Fevereiro'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a65"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'Mar&amp;ccedil;o'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a66"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'Abril'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a67"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'Maio'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a68"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'Junho'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a69"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'Julho'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a70"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'Agosto'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a71"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'Setembro'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a72"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'Outubro'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a73"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'Novembro'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a74"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">'Dezembro'</span></div></li>
+<li><div class="src-line"><a name="a75"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a76"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-var">$aMes</span><span class="src-sym">[&nbsp;</span>(int)&nbsp;<span class="src-var">$mes&nbsp;</span><span class="src-sym">]</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a77"></a><span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a78"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a79"></a><span class="src-doc">&nbsp;*&nbsp;Gera&nbsp;os&nbsp;Selects&nbsp;de&nbsp;Dia,&nbsp;Mês&nbsp;e&nbsp;Ano.</span></div></li>
+<li><div class="src-line"><a name="a80"></a><span class="src-doc">&nbsp;*&nbsp;Um&nbsp;ao&nbsp;lado&nbsp;do&nbsp;outro,&nbsp;e&nbsp;deixa&nbsp;selecionado&nbsp;a&nbsp;data&nbsp;que&nbsp;for&nbsp;informada,&nbsp;desde&nbsp;que&nbsp;essa&nbsp;data&nbsp;seja&nbsp;informada&nbsp;no&nbsp;formato</span></div></li>
+<li><div class="src-line"><a name="a81"></a><span class="src-doc">&nbsp;*&nbsp;americano:&nbsp;AAAA-MM-DD.</span></div></li>
+<li><div class="src-line"><a name="a82"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a83"></a><span class="src-doc">&nbsp;*&nbsp;Ex:</span></div></li>
+<li><div class="src-line"><a name="a84"></a><span class="src-doc">&nbsp;*&nbsp;&lt;code&gt;</span></div></li>
+<li><div class="src-line"><a name="a85"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&lt;?php&nbsp;echo&nbsp;chooseDate('dtNascimento');&nbsp;?&gt;&nbsp;//em&nbsp;HTML</span></div></li>
+<li><div class="src-line"><a name="a86"></a><span class="src-doc">&nbsp;*&nbsp;&lt;/code&gt;</span></div></li>
+<li><div class="src-line"><a name="a87"></a><span class="src-doc">&nbsp;*&nbsp;Ao&nbsp;submeter&nbsp;o&nbsp;formulário&nbsp;tratar&nbsp;como&nbsp;um&nbsp;array,&nbsp;onde:</span></div></li>
+<li><div class="src-line"><a name="a88"></a><span class="src-doc">&nbsp;*&nbsp;1.&nbsp;$var['d']&nbsp;-&nbsp;contém&nbsp;o&nbsp;dia.</span></div></li>
+<li><div class="src-line"><a name="a89"></a><span class="src-doc">&nbsp;*&nbsp;2.&nbsp;$var['m']&nbsp;-&nbsp;contém&nbsp;o&nbsp;Mês.</span></div></li>
+<li><div class="src-line"><a name="a90"></a><span class="src-doc">&nbsp;*&nbsp;3.&nbsp;$var['y']&nbsp;-&nbsp;contém&nbsp;o&nbsp;Ano.</span></div></li>
+<li><div class="src-line"><a name="a91"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a92"></a><span class="src-doc">&nbsp;*&nbsp;&lt;code&gt;</span></div></li>
+<li><div class="src-line"><a name="a93"></a><span class="src-doc">&nbsp;*&nbsp;&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a94"></a><span class="src-doc">&nbsp;*&nbsp;$dtNasc&nbsp;=&nbsp;$_POST['dtNascimento'];</span></div></li>
+<li><div class="src-line"><a name="a95"></a><span class="src-doc">&nbsp;*&nbsp;if&nbsp;(&nbsp;!&nbsp;checkdate(&nbsp;$dtNasc[&nbsp;'m'&nbsp;],&nbsp;$dtNasc[&nbsp;'d'&nbsp;],&nbsp;$dtNasc[&nbsp;'y'&nbsp;]&nbsp;)&nbsp;)&nbsp;{</span></div></li>
+<li><div class="src-line"><a name="a96"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;printf('Data&nbsp;de&nbsp;Nascimento[%s/%s/%s]&nbsp;é&nbsp;inválida!',$dtNasc[&nbsp;'d'&nbsp;],$dtNasc[&nbsp;'m'&nbsp;],$dtNasc[&nbsp;'y'&nbsp;]);</span></div></li>
+<li><div class="src-line"><a name="a97"></a><span class="src-doc">&nbsp;*&nbsp;}</span></div></li>
+<li><div class="src-line"><a name="a98"></a><span class="src-doc">&nbsp;*&nbsp;?&gt;</span></div></li>
+<li><div class="src-line"><a name="a99"></a><span class="src-doc">&nbsp;*&nbsp;&lt;/code&gt;</span></div></li>
+<li><div class="src-line"><a name="a100"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a101"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$pName&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a102"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nome&nbsp;do&nbsp;elemento&nbsp;&lt;select&gt;</span></div></li>
+<li><div class="src-line"><a name="a103"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$timestamp&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a104"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data&nbsp;em&nbsp;formato&nbsp;americano:&nbsp;YYYY-MM-DD</span></div></li>
+<li><div class="src-line"><a name="a105"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@return&nbsp;</span><span class="src-doc-type">string&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a106"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a107"></a><span class="src-key">function&nbsp;</span><a href="../waFunctions/_date.php.html#functionchooseDate">chooseDate</a><span class="src-sym">(&nbsp;</span><span class="src-var">$pName</span><span class="src-sym">,&nbsp;</span><span class="src-var">$timestamp&nbsp;</span>=&nbsp;<span class="src-str">&quot;&quot;&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a108"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a109"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$timestamp&nbsp;</span>==&nbsp;<span class="src-str">&quot;&quot;&nbsp;</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a110"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$timestamp&nbsp;</span>=&nbsp;<a href="http://www.php.net/time">time</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a111"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a112"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a113"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$out&nbsp;</span>=&nbsp;<span class="src-str">&quot;</span><span class="src-str">&lt;select&nbsp;name=\&quot;{<span class="src-var">$pName</span><span class="src-sym">}</span>[d]\&quot;&nbsp;style=\&quot;width:&nbsp;45px;\&quot;&gt;</span><span class="src-str">&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a114"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">for&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$i&nbsp;</span>=&nbsp;<span class="src-num">1</span><span class="src-sym">;&nbsp;</span><span class="src-var">$i&nbsp;</span>&lt;=&nbsp;<span class="src-num">31</span><span class="src-sym">;&nbsp;</span><span class="src-var">$i</span>++&nbsp;<span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a115"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$tmp&nbsp;</span>=&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-var">$i&nbsp;</span>==&nbsp;<a href="http://www.php.net/date">date</a><span class="src-sym">(&nbsp;</span><span class="src-str">'j'</span><span class="src-sym">,&nbsp;</span><span class="src-var">$timestamp&nbsp;</span><span class="src-sym">)&nbsp;</span>?&nbsp;<span class="src-str">'&nbsp;selected=&quot;selected&quot;'&nbsp;</span>:&nbsp;<span class="src-str">''&nbsp;&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a116"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$out&nbsp;</span>.=&nbsp;<span class="src-str">'&lt;option&nbsp;value=&quot;'&nbsp;</span>.&nbsp;<span class="src-var">$i&nbsp;</span>.&nbsp;<span class="src-str">'&quot;&nbsp;'&nbsp;</span>.&nbsp;<span class="src-var">$tmp&nbsp;&nbsp;</span>.&nbsp;<span class="src-str">'&nbsp;&gt;'&nbsp;</span>.&nbsp;<span class="src-var">$i&nbsp;</span>.&nbsp;<span class="src-str">'&lt;/option&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a117"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a118"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$out&nbsp;</span>.=&nbsp;<span class="src-str">&quot;</span><span class="src-str">&lt;/select&gt;\n&lt;select&nbsp;name=\&quot;{<span class="src-var">$pName</span><span class="src-sym">}</span>[m]\&quot;&nbsp;style=\&quot;width:&nbsp;90px;\&quot;&gt;</span><span class="src-str">&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a119"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a120"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">for&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$i&nbsp;</span>=&nbsp;<span class="src-num">1</span><span class="src-sym">;&nbsp;</span><span class="src-var">$i&nbsp;</span>&lt;=&nbsp;<span class="src-num">12</span><span class="src-sym">;&nbsp;</span><span class="src-var">$i</span>++&nbsp;<span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a121"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$tmp&nbsp;</span>=&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-var">$i&nbsp;</span>==&nbsp;<a href="http://www.php.net/date">date</a><span class="src-sym">(&nbsp;</span><span class="src-str">'m'</span><span class="src-sym">,&nbsp;</span><span class="src-var">$timestamp&nbsp;</span><span class="src-sym">)&nbsp;</span>?&nbsp;<span class="src-str">'&nbsp;selected=&quot;selected&quot;'&nbsp;</span>:&nbsp;<span class="src-str">''&nbsp;&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a122"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$out&nbsp;</span>.=&nbsp;<span class="src-str">'&lt;option&nbsp;value=&quot;'&nbsp;</span>.&nbsp;<span class="src-var">$i&nbsp;</span>.&nbsp;<span class="src-str">'&quot;&nbsp;'&nbsp;</span>.&nbsp;<span class="src-var">$tmp&nbsp;&nbsp;</span>.&nbsp;<span class="src-str">'&nbsp;&gt;'&nbsp;</span>.&nbsp;<a href="../waFunctions/_date.php.html#functionstrMes">strMes</a><span class="src-sym">(</span><span class="src-var">$i</span><span class="src-sym">)&nbsp;</span>.&nbsp;<span class="src-str">'&lt;/option&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a123"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a124"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$out&nbsp;</span>.=&nbsp;<span class="src-str">&quot;</span><span class="src-str">&lt;/select&gt;\n&lt;select&nbsp;name=\&quot;{<span class="src-var">$pName</span><span class="src-sym">}</span>[y]\&quot;&nbsp;style=\&quot;width:&nbsp;60px;\&quot;&gt;</span><span class="src-str">&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a125"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">for&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$i&nbsp;</span>=&nbsp;<a href="http://www.php.net/date">date</a><span class="src-sym">(&nbsp;</span><span class="src-str">'Y'&nbsp;</span><span class="src-sym">)&nbsp;</span>+&nbsp;<span class="src-num">1</span><span class="src-sym">;&nbsp;</span><span class="src-var">$i&nbsp;</span>&gt;=&nbsp;<span class="src-num">1970</span><span class="src-sym">;&nbsp;</span><span class="src-var">$i</span>--&nbsp;<span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a126"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$tmp&nbsp;</span>=&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-var">$i&nbsp;</span>==&nbsp;<a href="http://www.php.net/date">date</a><span class="src-sym">(&nbsp;</span><span class="src-str">'Y'</span><span class="src-sym">,&nbsp;</span><span class="src-var">$timestamp&nbsp;</span><span class="src-sym">)&nbsp;</span>?&nbsp;<span class="src-str">'&nbsp;selected=&quot;selected&quot;'&nbsp;</span>:&nbsp;<span class="src-str">''&nbsp;&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a127"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$out&nbsp;</span>.=&nbsp;<span class="src-str">'&lt;option&nbsp;value=&quot;'&nbsp;</span>.&nbsp;<span class="src-var">$i&nbsp;</span>.&nbsp;<span class="src-str">'&quot;&nbsp;'&nbsp;</span>.&nbsp;<span class="src-var">$tmp&nbsp;&nbsp;</span>.&nbsp;<span class="src-str">'&nbsp;&gt;'&nbsp;</span>.&nbsp;<span class="src-var">$i&nbsp;</span>.&nbsp;<span class="src-str">'&lt;/option&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a128"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a129"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$out&nbsp;</span>.=&nbsp;<span class="src-str">&quot;&lt;/select&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a130"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-var">$out</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a131"></a><span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a132"></a><span class="src-php">?&gt;</span></div></li>
+</ol>
+</span></div>
+        <div class="credit">
+		    <hr class="separator" />
+		    Documentation generated on Mon, 16 Feb 2009 20:44:14 -0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

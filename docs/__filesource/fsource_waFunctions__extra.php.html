@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>File Source for Funções Extras</title>
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+	<td class="header-top-left"><img src="../media/logo.png" border="0" alt="phpDocumentor " /></td>
+    <td class="header-top-right">waFunctions<br /><div class="header-top-right-subpackage"></div></td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td colspan="2" class="header-menu">
+      
+                        
+                      		[ <a href="../classtrees_waFunctions.html" class="menu">class tree: waFunctions</a> ]
+		[ <a href="../elementindex_waFunctions.html" class="menu">index: waFunctions</a> ]
+            [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="195" class="menu">
+		<div class="package-title">waFunctions</div>
+      <b>Packages:</b><br />
+  <div class="package">
+              <a href="../li_waFunctions.html">waFunctions</a><br />
+      	</div>
+      <br />
+                        <br />
+                      </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1 align="center">Source for file Funções Extras</h1>
+<p>Documentation is available at <a href="../waFunctions/_extra.php.html">Funções Extras</a></p>
+<div class="src-code"><span class="php">
+<ol><li><div class="src-line"><a name="a1"></a><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a2"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a3"></a><span class="src-doc">&nbsp;*&nbsp;Funções&nbsp;Extras.</span></div></li>
+<li><div class="src-line"><a name="a4"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a5"></a><span class="src-doc">&nbsp;*&nbsp;Funções&nbsp;com&nbsp;usos&nbsp;diversos,&nbsp;ainda&nbsp;não&nbsp;categorizadas</span></div></li>
+<li><div class="src-line"><a name="a6"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a7"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@package</span><span class="src-doc">&nbsp;&nbsp;&nbsp;waFunctions</span></div></li>
+<li><div class="src-line"><a name="a8"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@name</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Funções&nbsp;Extras</span></div></li>
+<li><div class="src-line"><a name="a9"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@author</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="src-doc-inlinetag">{@link&nbsp;http://www.walkeralencar.com&nbsp;Walker&nbsp;de&nbsp;Alencar}</span><span class="src-doc">&nbsp;&lt;contato@walkeralencar.com&gt;</span></div></li>
+<li><div class="src-line"><a name="a10"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@copyright</span><span class="src-doc">&nbsp;2007-2008&nbsp;(c)&nbsp;-&nbsp;</span><span class="src-doc-inlinetag">{@link&nbsp;http://www.walkeralencar.com&nbsp;Walker&nbsp;de&nbsp;Alencar}</span><span class="src-doc">&nbsp;&lt;contato@walkeralencar.com&gt;</span></div></li>
+<li><div class="src-line"><a name="a11"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@license</span><span class="src-doc">&nbsp;&nbsp;&nbsp;http://www.gnu.org/licenses/lgpl.txt&nbsp;LGPL</span></div></li>
+<li><div class="src-line"><a name="a12"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@link</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.walkeralencar.com/</span></div></li>
+<li><div class="src-line"><a name="a13"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@link</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://code.google.com/p/sniphpets</span></div></li>
+<li><div class="src-line"><a name="a14"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@version</span><span class="src-doc">&nbsp;&nbsp;&nbsp;2.0&nbsp;beta&nbsp;UTF-8</span></div></li>
+<li><div class="src-line"><a name="a15"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a16"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a17"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a18"></a><span class="src-doc">&nbsp;*&nbsp;Gera&nbsp;paginacao,&nbsp;de&nbsp;lista&nbsp;de&nbsp;registros&nbsp;de&nbsp;tabela&nbsp;por&nbsp;exemplo.</span></div></li>
+<li><div class="src-line"><a name="a19"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a20"></a><span class="src-doc">&nbsp;*&nbsp;Recomenda-se&nbsp;o&nbsp;uso&nbsp;deste&nbsp;CSS(&nbsp;</span><span class="src-doc-inlinetag">{@link&nbsp;http://www.walkeralencar.com/resources/css/paginacao.css&nbsp;paginacao.css}</span><span class="src-doc">&nbsp;)</span></div></li>
+<li><div class="src-line"><a name="a21"></a><span class="src-doc">&nbsp;*&nbsp;na&nbsp;página.&nbsp;Você&nbsp;pode&nbsp;personalizá-lo&nbsp;como&nbsp;bem&nbsp;entender.</span></div></li>
+<li><div class="src-line"><a name="a22"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a23"></a><span class="src-doc">&nbsp;*&nbsp;Modo&nbsp;de&nbsp;uso:</span></div></li>
+<li><div class="src-line"><a name="a24"></a><span class="src-doc">&nbsp;*&nbsp;&lt;code&gt;</span></div></li>
+<li><div class="src-line"><a name="a25"></a><span class="src-doc">&nbsp;*&nbsp;&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a26"></a><span class="src-doc">&nbsp;*&nbsp;echo&nbsp;geraPaginacao('clientes.php',&nbsp;6,&nbsp;4,&nbsp;(checkGET('np')?$_GET['np']:1)&nbsp;);</span></div></li>
+<li><div class="src-line"><a name="a27"></a><span class="src-doc">&nbsp;*&nbsp;?&gt;</span></div></li>
+<li><div class="src-line"><a name="a28"></a><span class="src-doc">&nbsp;*&nbsp;&lt;/code&gt;</span></div></li>
+<li><div class="src-line"><a name="a29"></a><span class="src-doc">&nbsp;*&nbsp;Resultado:</span></div></li>
+<li><div class="src-line"><a name="a30"></a><span class="src-doc">&nbsp;*&nbsp;&lt;code&gt;</span></div></li>
+<li><div class="src-line"><a name="a31"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;paginacao&quot;&gt;</span></div></li>
+<li><div class="src-line"><a name="a32"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;</span></div></li>
+<li><div class="src-line"><a name="a33"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a&nbsp;href=&quot;clientes.php?np=1&quot;&nbsp;class=&quot;marcado&quot;&gt;1&lt;/a&gt;&lt;/li&gt;</span></div></li>
+<li><div class="src-line"><a name="a34"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a&nbsp;href=&quot;clientes.php?np=2&quot;&nbsp;&gt;2&lt;/a&gt;&lt;/li&gt;</span></div></li>
+<li><div class="src-line"><a name="a35"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;</span></div></li>
+<li><div class="src-line"><a name="a36"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span></div></li>
+<li><div class="src-line"><a name="a37"></a><span class="src-doc">&nbsp;*&nbsp;&lt;/code&gt;</span></div></li>
+<li><div class="src-line"><a name="a38"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a39"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$pURL&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a40"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Endereco&nbsp;do&nbsp;link&nbsp;a&nbsp;ser&nbsp;gerado.</span></div></li>
+<li><div class="src-line"><a name="a41"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">int&nbsp;</span><span class="src-doc-var">$pTotal&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a42"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qtd&nbsp;total&nbsp;de&nbsp;Registros.</span></div></li>
+<li><div class="src-line"><a name="a43"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">int&nbsp;</span><span class="src-doc-var">$pLimite&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a44"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Limite&nbsp;de&nbsp;Registros&nbsp;por&nbsp;página.</span></div></li>
+<li><div class="src-line"><a name="a45"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">int&nbsp;</span><span class="src-doc-var">$pCurrentPage&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a46"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Página&nbsp;Atual,&nbsp;gerado&nbsp;o&nbsp;valor&nbsp;em&nbsp;$_GET['np'].</span></div></li>
+<li><div class="src-line"><a name="a47"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@return&nbsp;</span><span class="src-doc-type">string&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a48"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a49"></a><span class="src-key">function&nbsp;</span><a href="../waFunctions/_extra.php.html#functiongeraPaginacao">geraPaginacao</a><span class="src-sym">(&nbsp;</span><span class="src-var">$pURL</span><span class="src-sym">,&nbsp;</span><span class="src-var">$pTotal</span><span class="src-sym">,&nbsp;</span><span class="src-var">$pLimite</span><span class="src-sym">,&nbsp;</span><span class="src-var">$pCurrentPage&nbsp;</span>=&nbsp;<span class="src-num">1&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a50"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a51"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//Máximo&nbsp;de&nbsp;Páginas</span></div></li>
+<li><div class="src-line"><a name="a52"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$iMax&nbsp;</span>=&nbsp;<a href="http://www.php.net/ceil">ceil</a><span class="src-sym">(&nbsp;</span><span class="src-var">$pTotal&nbsp;</span>/&nbsp;<span class="src-var">$pLimite&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a53"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a54"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//Verifica&nbsp;se&nbsp;a&nbsp;url&nbsp;já&nbsp;possui&nbsp;o&nbsp;char&nbsp;?,&nbsp;para&nbsp;gerar&nbsp;entre&nbsp;(?&nbsp;e&nbsp;&amp;)&nbsp;antes&nbsp;do&nbsp;'np'</span></div></li>
+<li><div class="src-line"><a name="a55"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$pURL&nbsp;</span>.=&nbsp;<span class="src-sym">(&nbsp;(&nbsp;</span><a href="http://www.php.net/strpos">strpos</a><span class="src-sym">(&nbsp;</span><span class="src-var">$pURL</span><span class="src-sym">,&nbsp;</span><span class="src-str">'?'&nbsp;</span><span class="src-sym">)&nbsp;</span>===&nbsp;<span class="src-id">false&nbsp;</span><span class="src-sym">)&nbsp;</span>?&nbsp;<span class="src-str">&quot;?&quot;&nbsp;</span>:&nbsp;<span class="src-str">&quot;&amp;amp;&quot;&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a56"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a57"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$tmpStr&nbsp;</span>=&nbsp;<span class="src-str">&quot;\n&lt;div&nbsp;id=\&quot;paginacao\&quot;&gt;\n\t&lt;ul&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a58"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a59"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">for&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$iCounter&nbsp;</span>=&nbsp;<span class="src-num">1</span><span class="src-sym">;&nbsp;</span><span class="src-var">$iCounter&nbsp;</span>&lt;=&nbsp;<span class="src-var">$iMax</span><span class="src-sym">;&nbsp;</span><span class="src-var">$iCounter</span>++&nbsp;<span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a60"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$tmpMark&nbsp;</span>=&nbsp;<span class="src-sym">(&nbsp;(&nbsp;</span><span class="src-var">$iCounter&nbsp;</span>==&nbsp;<span class="src-var">$pCurrentPage&nbsp;</span><span class="src-sym">)&nbsp;</span>?&nbsp;<span class="src-str">&quot;class=\&quot;marcado\&quot;&quot;&nbsp;</span>:&nbsp;<span class="src-str">&quot;&quot;&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a61"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$tmpStr&nbsp;</span>.=&nbsp;<span class="src-str">&quot;</span><span class="src-str">\n\t\t&lt;li&gt;&lt;a&nbsp;href=\&quot;{<span class="src-var">$pURL</span><span class="src-sym">}</span>np={<span class="src-var">$iCounter</span><span class="src-sym">}</span>\&quot;&nbsp;{<span class="src-var">$tmpMark</span><span class="src-sym">}</span>&gt;{<span class="src-var">$iCounter</span><span class="src-sym">}</span>&lt;/a&gt;&lt;/li&gt;</span><span class="src-str">&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a62"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a63"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a64"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$tmpStr&nbsp;</span>.=&nbsp;<span class="src-str">&quot;\n\t&lt;/ul&gt;\n&lt;/div&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a65"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a66"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-var">$tmpStr</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a67"></a><span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a68"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a69"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a70"></a><span class="src-doc">&nbsp;*&nbsp;Gera&nbsp;os&nbsp;options,&nbsp;com&nbsp;base&nbsp;em&nbsp;um&nbsp;array&nbsp;informado&nbsp;e&nbsp;em&nbsp;conformidade&nbsp;com&nbsp;o&nbsp;W3C&nbsp;-&nbsp;XHTML&nbsp;1.0</span></div></li>
+<li><div class="src-line"><a name="a71"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a72"></a><span class="src-doc">&nbsp;*&nbsp;&lt;code&gt;</span></div></li>
+<li><div class="src-line"><a name="a73"></a><span class="src-doc">&nbsp;*&nbsp;&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a74"></a><span class="src-doc">&nbsp;*&nbsp;$aTeste&nbsp;=&nbsp;array(1&nbsp;=&gt;&nbsp;'um',2&nbsp;=&gt;&nbsp;'dois',5&nbsp;=&gt;&nbsp;'cinco');</span></div></li>
+<li><div class="src-line"><a name="a75"></a><span class="src-doc">&nbsp;*&nbsp;echo&nbsp;&quot;&lt;select&nbsp;name=\&quot;teste\&quot;&gt;&quot;.ArrayToOption($aTeste,2).&quot;&lt;/select&gt;&quot;;</span></div></li>
+<li><div class="src-line"><a name="a76"></a><span class="src-doc">&nbsp;*&nbsp;?&gt;</span></div></li>
+<li><div class="src-line"><a name="a77"></a><span class="src-doc">&nbsp;*&nbsp;&lt;/code&gt;</span></div></li>
+<li><div class="src-line"><a name="a78"></a><span class="src-doc">&nbsp;*&nbsp;Resultado:</span></div></li>
+<li><div class="src-line"><a name="a79"></a><span class="src-doc">&nbsp;*&nbsp;&lt;code&gt;</span></div></li>
+<li><div class="src-line"><a name="a80"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&lt;select&nbsp;name=&quot;teste&quot;&gt;</span></div></li>
+<li><div class="src-line"><a name="a81"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value=&quot;1&quot;&nbsp;&gt;um&lt;/option&gt;</span></div></li>
+<li><div class="src-line"><a name="a82"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value=&quot;2&quot;&nbsp;selected=&quot;selected&quot;&nbsp;&gt;dois&lt;/option&gt;</span></div></li>
+<li><div class="src-line"><a name="a83"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value=&quot;5&quot;&nbsp;&gt;cinco&lt;/option&gt;</span></div></li>
+<li><div class="src-line"><a name="a84"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&lt;/select&gt;</span></div></li>
+<li><div class="src-line"><a name="a85"></a><span class="src-doc">&nbsp;*&nbsp;&lt;/code&gt;</span></div></li>
+<li><div class="src-line"><a name="a86"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a87"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">array&nbsp;</span><span class="src-doc-var">$pItem&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a88"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lista&nbsp;com&nbsp;as&nbsp;opções&nbsp;em&nbsp;um&nbsp;array.</span></div></li>
+<li><div class="src-line"><a name="a89"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">mixed&nbsp;</span><span class="src-doc-var">$pAtual&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a90"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Key&nbsp;do&nbsp;item&nbsp;que&nbsp;deve&nbsp;estar&nbsp;marcado&nbsp;com:&nbsp;selected.</span></div></li>
+<li><div class="src-line"><a name="a91"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@return&nbsp;</span><span class="src-doc-type">string&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a92"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a93"></a><span class="src-key">function&nbsp;</span><a href="../waFunctions/_extra.php.html#functionArrayToOption">ArrayToOption</a><span class="src-sym">(&nbsp;</span><span class="src-var">$pItem</span><span class="src-sym">,&nbsp;</span><span class="src-var">$pAtual&nbsp;</span>=&nbsp;<span class="src-num">0&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a94"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a95"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$tmpStr&nbsp;</span>=&nbsp;<span class="src-id">null</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a96"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">foreach&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$pItem&nbsp;</span><span class="src-key">as&nbsp;</span><span class="src-var">$id&nbsp;</span>=&gt;&nbsp;<span class="src-var">$texto&nbsp;</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a97"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$selected&nbsp;</span>=&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-var">$id&nbsp;</span>==&nbsp;<span class="src-var">$pAtual&nbsp;</span><span class="src-sym">)&nbsp;</span>?&nbsp;<span class="src-str">'selected=&quot;selected&quot;'&nbsp;</span>:&nbsp;<span class="src-str">''</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a98"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$tmpStr&nbsp;</span>.=&nbsp;<span class="src-str">&quot;</span><span class="src-str">\n\t&lt;option&nbsp;value=\&quot;{<span class="src-var">$id</span><span class="src-sym">}</span>\&quot;&nbsp;{<span class="src-var">$selected</span><span class="src-sym">}</span>&gt;{<span class="src-var">$texto</span><span class="src-sym">}</span>&lt;/option&gt;</span><span class="src-str">&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a99"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a100"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-var">$tmpStr</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a101"></a><span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a102"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a103"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a104"></a><span class="src-doc">&nbsp;*&nbsp;Gera&nbsp;um&nbsp;Select/options,&nbsp;com&nbsp;base&nbsp;em&nbsp;um&nbsp;array&nbsp;informado.</span></div></li>
+<li><div class="src-line"><a name="a105"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a106"></a><span class="src-doc">&nbsp;*&nbsp;&lt;code&gt;</span></div></li>
+<li><div class="src-line"><a name="a107"></a><span class="src-doc">&nbsp;*&nbsp;&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a108"></a><span class="src-doc">&nbsp;*&nbsp;$aTeste&nbsp;=&nbsp;array(1&nbsp;=&gt;&nbsp;'um',2&nbsp;=&gt;&nbsp;'dois',5&nbsp;=&gt;&nbsp;'cinco');</span></div></li>
+<li><div class="src-line"><a name="a109"></a><span class="src-doc">&nbsp;*&nbsp;echo&nbsp;ArrayToSelect($aTeste,'teste',2);</span></div></li>
+<li><div class="src-line"><a name="a110"></a><span class="src-doc">&nbsp;*&nbsp;?&gt;</span></div></li>
+<li><div class="src-line"><a name="a111"></a><span class="src-doc">&nbsp;*&nbsp;&lt;/code&gt;</span></div></li>
+<li><div class="src-line"><a name="a112"></a><span class="src-doc">&nbsp;*&nbsp;Resultado:</span></div></li>
+<li><div class="src-line"><a name="a113"></a><span class="src-doc">&nbsp;*&nbsp;&lt;code&gt;</span></div></li>
+<li><div class="src-line"><a name="a114"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&lt;select&nbsp;name=&quot;teste&quot;&nbsp;id=&quot;teste&quot;&gt;</span></div></li>
+<li><div class="src-line"><a name="a115"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value=&quot;1&quot;&nbsp;&gt;um&lt;/option&gt;</span></div></li>
+<li><div class="src-line"><a name="a116"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value=&quot;2&quot;&nbsp;selected=&quot;selected&quot;&nbsp;&gt;dois&lt;/option&gt;</span></div></li>
+<li><div class="src-line"><a name="a117"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value=&quot;5&quot;&nbsp;&gt;cinco&lt;/option&gt;</span></div></li>
+<li><div class="src-line"><a name="a118"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&lt;/select&gt;</span></div></li>
+<li><div class="src-line"><a name="a119"></a><span class="src-doc">&nbsp;*&nbsp;&lt;/code&gt;</span></div></li>
+<li><div class="src-line"><a name="a120"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a121"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">array&nbsp;</span><span class="src-doc-var">$pItems&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a122"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lista&nbsp;com&nbsp;as&nbsp;Opções&nbsp;em&nbsp;um&nbsp;array.</span></div></li>
+<li><div class="src-line"><a name="a123"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$pNome&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a124"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nome&nbsp;do&nbsp;elemento&nbsp;&lt;select&gt;</span></div></li>
+<li><div class="src-line"><a name="a125"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">mixed&nbsp;</span><span class="src-doc-var">$pAtual&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a126"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Key&nbsp;do&nbsp;item&nbsp;que&nbsp;deve&nbsp;estar&nbsp;marcado&nbsp;com:&nbsp;selected.</span></div></li>
+<li><div class="src-line"><a name="a127"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@return&nbsp;</span><span class="src-doc-type">string&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a128"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a129"></a><span class="src-key">function&nbsp;</span><a href="../waFunctions/_extra.php.html#functionArrayToSelect">ArrayToSelect</a><span class="src-sym">(&nbsp;</span><span class="src-var">$pItems</span><span class="src-sym">,&nbsp;</span><span class="src-var">$pNome</span><span class="src-sym">,&nbsp;</span><span class="src-var">$pAtual&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a130"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a131"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$arOpt&nbsp;</span>=&nbsp;<a href="../waFunctions/_extra.php.html#functionArrayToOption">ArrayToOption</a><span class="src-sym">(&nbsp;</span><span class="src-var">$pItems</span><span class="src-sym">,&nbsp;</span><span class="src-var">$pAtual&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a132"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$tmpStr&nbsp;</span>=&nbsp;<span class="src-str">&quot;</span><span class="src-str">\n&lt;select&nbsp;name=\&quot;{<span class="src-var">$pNome</span><span class="src-sym">}</span>\&quot;&nbsp;id=\&quot;{<span class="src-var">$pNome</span><span class="src-sym">}</span>\&quot;&gt;\n\t{<span class="src-var">$arOpt</span><span class="src-sym">}</span>\n&lt;/select&gt;</span><span class="src-str">&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a133"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-var">$tmpStr</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a134"></a><span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a135"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a136"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a137"></a><span class="src-doc">&nbsp;*&nbsp;Obtem&nbsp;a&nbsp;lista&nbsp;de&nbsp;Estados&nbsp;do&nbsp;Brasil.</span></div></li>
+<li><div class="src-line"><a name="a138"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a139"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@return&nbsp;</span><span class="src-doc-type">array&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a140"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Array&nbsp;contendo&nbsp;as&nbsp;UF&nbsp;como&nbsp;&quot;Keys&quot;&nbsp;e&nbsp;o&nbsp;nome&nbsp;por&nbsp;extenso&nbsp;como&nbsp;&quot;Value&quot;</span></div></li>
+<li><div class="src-line"><a name="a141"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a142"></a><span class="src-key">function&nbsp;</span><a href="../waFunctions/_extra.php.html#functionlistUF">listUF</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a143"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-key">array</span><span class="src-sym">(</span></div></li>
+<li><div class="src-line"><a name="a144"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;AC&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Acre&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a145"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;AL&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Alagoas&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a146"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;AM&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Amazonas&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a147"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;AP&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Amapá&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a148"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;BA&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Bahia&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a149"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;CE&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Ceará&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a150"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;DF&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Distrito&nbsp;Federal&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a151"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;ES&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Espírito&nbsp;Santo&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a152"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;GO&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Goiás&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a153"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;MA&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Maranhão&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a154"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;MG&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Minas&nbsp;Gerais&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a155"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;MS&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Mato&nbsp;Grosso&nbsp;do&nbsp;Sul&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a156"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;MT&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Mato&nbsp;Grosso&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a157"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;PA&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Pará&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a158"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;PB&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Paraíba&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a159"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;PE&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Pernambuco&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a160"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;PI&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Piauí&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a161"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;PR&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Paraná&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a162"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;RJ&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Rio&nbsp;de&nbsp;Janeiro&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a163"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;RN&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Rio&nbsp;Grande&nbsp;do&nbsp;Norte&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a164"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;RO&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Rondônia&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a165"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;RR&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Roraima&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a166"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;RS&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Rio&nbsp;Grande&nbsp;do&nbsp;Sul&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a167"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;SC&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Santa&nbsp;Catarina&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a168"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;SE&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Sergipe&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a169"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;SP&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;São&nbsp;Paulo&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a170"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;TO&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Tocantins&quot;</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line"><a name="a171"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-str">&quot;EX&quot;&nbsp;</span>=&gt;&nbsp;<span class="src-str">&quot;Exterior&quot;</span></div></li>
+<li><div class="src-line"><a name="a172"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a173"></a><span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a174"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a175"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a176"></a><span class="src-doc">&nbsp;*&nbsp;Cria&nbsp;um&nbsp;Select/Option&nbsp;de&nbsp;UF.</span></div></li>
+<li><div class="src-line"><a name="a177"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a178"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$pAtual&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a179"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UF&nbsp;do&nbsp;Estado&nbsp;que&nbsp;deverá&nbsp;ficar&nbsp;como&nbsp;selecionado.</span></div></li>
+<li><div class="src-line"><a name="a180"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$pName&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a181"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nome&nbsp;do&nbsp;elemento&nbsp;&lt;select&gt;</span></div></li>
+<li><div class="src-line"><a name="a182"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@return&nbsp;</span><span class="src-doc-type">string&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a183"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;contendo&nbsp;&lt;select&gt;&lt;option&gt;...</span></div></li>
+<li><div class="src-line"><a name="a184"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a185"></a><span class="src-key">function&nbsp;</span><a href="../waFunctions/_extra.php.html#functionselectUF">selectUF</a><span class="src-sym">(&nbsp;</span><span class="src-var">$pAtual</span><span class="src-sym">,&nbsp;</span><span class="src-var">$pName&nbsp;</span>=&nbsp;<span class="src-str">'uf'&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a186"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a187"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-sym">!</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(&nbsp;</span><span class="src-var">$pAtual</span><span class="src-sym">,&nbsp;</span><a href="../waFunctions/_extra.php.html#functionlistUF">listUF</a><span class="src-sym">(</span><span class="src-sym">)&nbsp;)&nbsp;)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a188"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$pAtual&nbsp;</span>=&nbsp;<span class="src-str">&quot;--&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a189"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a190"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><a href="../waFunctions/_extra.php.html#functionArrayToSelect">ArrayToSelect</a><span class="src-sym">(&nbsp;</span><a href="../waFunctions/_extra.php.html#functionlistUF">listUF</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">,&nbsp;</span><span class="src-var">$pName</span><span class="src-sym">,&nbsp;</span><span class="src-var">$pAtual&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a191"></a><span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a192"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a193"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a194"></a><span class="src-doc">&nbsp;*&nbsp;Cria&nbsp;os&nbsp;Option&nbsp;de&nbsp;UF.</span></div></li>
+<li><div class="src-line"><a name="a195"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a196"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@param&nbsp;</span><span class="src-doc-type">string&nbsp;</span><span class="src-doc-var">$pAtual&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a197"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UF&nbsp;do&nbsp;Estado&nbsp;que&nbsp;deverá&nbsp;ficar&nbsp;como&nbsp;selecionado.</span></div></li>
+<li><div class="src-line"><a name="a198"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@return&nbsp;</span><span class="src-doc-type">string&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a199"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;contendo&nbsp;&lt;option&gt;...</span></div></li>
+<li><div class="src-line"><a name="a200"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a201"></a><span class="src-key">function&nbsp;</span><a href="../waFunctions/_extra.php.html#functionoptionsUF">optionsUF</a><span class="src-sym">(&nbsp;</span><span class="src-var">$pAtual&nbsp;</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a202"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a203"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-sym">!</span><a href="http://www.php.net/in_array">in_array</a><span class="src-sym">(&nbsp;</span><span class="src-var">$pAtual</span><span class="src-sym">,&nbsp;</span><a href="../waFunctions/_extra.php.html#functionlistUF">listUF</a><span class="src-sym">(</span><span class="src-sym">)&nbsp;)&nbsp;)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a204"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$pAtual&nbsp;</span>=&nbsp;<span class="src-str">&quot;--&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a205"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a206"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><a href="../waFunctions/_extra.php.html#functionArrayToOption">ArrayToOption</a><span class="src-sym">(&nbsp;</span><a href="../waFunctions/_extra.php.html#functionlistUF">listUF</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">,&nbsp;</span><span class="src-var">$pAtual&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a207"></a><span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a208"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a209"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a210"></a><span class="src-doc">&nbsp;*&nbsp;Varre&nbsp;todos&nbsp;os&nbsp;GET/POST/REQUEST,&nbsp;eliminando&nbsp;as&nbsp;tags&nbsp;de&nbsp;HTML&nbsp;e&nbsp;PHP,&nbsp;e&nbsp;aplicando&nbsp;o&nbsp;escape&nbsp;&quot;\&quot;&nbsp;para&nbsp;caracteres&nbsp;especiais.</span></div></li>
+<li><div class="src-line"><a name="a211"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a212"></a><span class="src-doc">&nbsp;*&nbsp;Obs.:&nbsp;é&nbsp;apenas&nbsp;uma&nbsp;precaução&nbsp;básica&nbsp;mas&nbsp;já&nbsp;ajuda&nbsp;muito.</span></div></li>
+<li><div class="src-line"><a name="a213"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a214"></a><span class="src-doc">&nbsp;*&nbsp;Recomendação:&nbsp;usar&nbsp;no&nbsp;antes&nbsp;de&nbsp;concatenar&nbsp;os&nbsp;$_GET/$_POST/$_REQUEST&nbsp;nas&nbsp;strings&nbsp;de&nbsp;SQL.</span></div></li>
+<li><div class="src-line"><a name="a215"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a216"></a><span class="src-doc">&nbsp;*&nbsp;Modo&nbsp;de&nbsp;Uso:</span></div></li>
+<li><div class="src-line"><a name="a217"></a><span class="src-doc">&nbsp;*&nbsp;&lt;code&gt;</span></div></li>
+<li><div class="src-line"><a name="a218"></a><span class="src-doc">&nbsp;*&nbsp;clearSqlInject();</span></div></li>
+<li><div class="src-line"><a name="a219"></a><span class="src-doc">&nbsp;*&nbsp;&lt;/code&gt;</span></div></li>
+<li><div class="src-line"><a name="a220"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a221"></a><span class="src-key">function&nbsp;</span><a href="../waFunctions/_extra.php.html#functionclearSqlInject">clearSqlInject</a><span class="src-sym">(</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a222"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a223"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-sym">!</span><a href="http://www.php.net/get_magic_quotes_gpc">get_magic_quotes_gpc</a><span class="src-sym">(</span><span class="src-sym">)&nbsp;)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a224"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><a href="http://www.php.net/count">count</a><span class="src-sym">(&nbsp;</span><span class="src-var">$_GET&nbsp;</span><span class="src-sym">)&nbsp;</span>&gt;&nbsp;<span class="src-num">0&nbsp;</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a225"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">foreach&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$_GET&nbsp;</span><span class="src-key">as&nbsp;</span><span class="src-var">$k&nbsp;</span>=&gt;&nbsp;<span class="src-var">$v&nbsp;</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a226"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$_GET</span><span class="src-sym">[&nbsp;</span><span class="src-var">$k&nbsp;</span><span class="src-sym">]&nbsp;</span>=&nbsp;<a href="http://www.php.net/mysql_real_escape_string">mysql_real_escape_string</a><span class="src-sym">(&nbsp;</span><a href="http://www.php.net/strip_tags">strip_tags</a><span class="src-sym">(&nbsp;</span><span class="src-var">$v&nbsp;</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a227"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a228"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a229"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><a href="http://www.php.net/count">count</a><span class="src-sym">(&nbsp;</span><span class="src-var">$_POST&nbsp;</span><span class="src-sym">)&nbsp;</span>&gt;&nbsp;<span class="src-num">0&nbsp;</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a230"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">foreach&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$_POST&nbsp;</span><span class="src-key">as&nbsp;</span><span class="src-var">$k&nbsp;</span>=&gt;&nbsp;<span class="src-var">$v&nbsp;</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a231"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$_POST</span><span class="src-sym">[&nbsp;</span><span class="src-var">$k&nbsp;</span><span class="src-sym">]&nbsp;</span>=&nbsp;<a href="http://www.php.net/mysql_real_escape_string">mysql_real_escape_string</a><span class="src-sym">(&nbsp;</span><a href="http://www.php.net/strip_tags">strip_tags</a><span class="src-sym">(&nbsp;</span><span class="src-var">$v&nbsp;</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a232"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a233"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a234"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(&nbsp;</span><a href="http://www.php.net/count">count</a><span class="src-sym">(&nbsp;</span><span class="src-var">$_REQUEST&nbsp;</span><span class="src-sym">)&nbsp;</span>&gt;&nbsp;<span class="src-num">0&nbsp;</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a235"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">foreach&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-var">$_REQUEST&nbsp;</span><span class="src-key">as&nbsp;</span><span class="src-var">$k&nbsp;</span>=&gt;&nbsp;<span class="src-var">$v&nbsp;</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a236"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$_REQUEST</span><span class="src-sym">[&nbsp;</span><span class="src-var">$k&nbsp;</span><span class="src-sym">]&nbsp;</span>=&nbsp;<a href="http://www.php.net/mysql_real_escape_string">mysql_real_escape_string</a><span class="src-sym">(&nbsp;</span><a href="http://www.php.net/strip_tags">strip_tags</a><span class="src-sym">(&nbsp;</span><span class="src-var">$v&nbsp;</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a237"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a238"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a239"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a240"></a><span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a241"></a><span class="src-php">?&gt;</span></div></li>
+</ol>
+</span></div>
+        <div class="credit">
+		    <hr class="separator" />
+		    Documentation generated on Mon, 16 Feb 2009 20:44:11 -0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

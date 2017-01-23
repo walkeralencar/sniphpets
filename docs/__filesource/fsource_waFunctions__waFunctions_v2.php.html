@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>File Source for Config</title>
+	<link rel="stylesheet" type="text/css" href="../media/style.css">
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+	<td class="header-top-left"><img src="../media/logo.png" border="0" alt="phpDocumentor " /></td>
+    <td class="header-top-right">waFunctions<br /><div class="header-top-right-subpackage"></div></td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td colspan="2" class="header-menu">
+      
+                        
+                      		[ <a href="../classtrees_waFunctions.html" class="menu">class tree: waFunctions</a> ]
+		[ <a href="../elementindex_waFunctions.html" class="menu">index: waFunctions</a> ]
+            [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td colspan="2" class="header-line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="195" class="menu">
+		<div class="package-title">waFunctions</div>
+      <b>Packages:</b><br />
+  <div class="package">
+              <a href="../li_waFunctions.html">waFunctions</a><br />
+      	</div>
+      <br />
+                        <br />
+                      </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1 align="center">Source for file Config</h1>
+<p>Documentation is available at <a href="../waFunctions/_waFunctions_v2.php.html">Config</a></p>
+<div class="src-code"><span class="php">
+<ol><li><div class="src-line"><a name="a1"></a><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a2"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a3"></a><span class="src-doc">&nbsp;*&nbsp;Biblioteca&nbsp;de&nbsp;Funções&nbsp;Básicas&nbsp;em&nbsp;PHP&nbsp;de&nbsp;Walker&nbsp;de&nbsp;Alencar.</span></div></li>
+<li><div class="src-line"><a name="a4"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a5"></a><span class="src-doc">&nbsp;*&nbsp;Esta&nbsp;Biblioteca&nbsp;foi&nbsp;criada&nbsp;com&nbsp;o&nbsp;intuito&nbsp;de&nbsp;facilitar&nbsp;a&nbsp;vida&nbsp;de&nbsp;programadores&nbsp;que&nbsp;estão&nbsp;iniciando&nbsp;com</span></div></li>
+<li><div class="src-line"><a name="a6"></a><span class="src-doc">&nbsp;*&nbsp;desenvolvimento&nbsp;em&nbsp;php,&nbsp;mas&nbsp;ajudará&nbsp;também&nbsp;desenvolvedores&nbsp;mais&nbsp;experientes&nbsp;pela&nbsp;forma&nbsp;que&nbsp;foi&nbsp;escrita</span></div></li>
+<li><div class="src-line"><a name="a7"></a><span class="src-doc">&nbsp;*&nbsp;e&nbsp;documentada.</span></div></li>
+<li><div class="src-line"><a name="a8"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a9"></a><span class="src-doc">&nbsp;*&nbsp;Esta&nbsp;versão&nbsp;está&nbsp;com&nbsp;mais&nbsp;recursos,&nbsp;e&nbsp;tem&nbsp;uma&nbsp;parte&nbsp;focada&nbsp;para&nbsp;quem&nbsp;está&nbsp;começando&nbsp;a&nbsp;Programar&nbsp;Orientado</span></div></li>
+<li><div class="src-line"><a name="a10"></a><span class="src-doc">&nbsp;*&nbsp;a&nbsp;Objetos.</span></div></li>
+<li><div class="src-line"><a name="a11"></a><span class="src-doc">&nbsp;*&nbsp;&lt;br/&gt;</span></div></li>
+<li><div class="src-line"><a name="a12"></a><span class="src-doc">&nbsp;*&nbsp;Caso&nbsp;nao&nbsp;vá&nbsp;usar&nbsp;os&nbsp;recursos&nbsp;de&nbsp;algum&nbsp;dos&nbsp;arquivos&nbsp;abaixo&nbsp;apenas&nbsp;comente&nbsp;com&nbsp;//</span></div></li>
+<li><div class="src-line"><a name="a13"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a14"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@package</span><span class="src-doc">&nbsp;&nbsp;&nbsp;waFunctions</span></div></li>
+<li><div class="src-line"><a name="a15"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@name</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Config</span></div></li>
+<li><div class="src-line"><a name="a16"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@author</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="src-doc-inlinetag">{@link&nbsp;http://www.walkeralencar.com&nbsp;Walker&nbsp;de&nbsp;Alencar}</span><span class="src-doc">&nbsp;&lt;contato@walkeralencar.com&gt;</span></div></li>
+<li><div class="src-line"><a name="a17"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@copyright</span><span class="src-doc">&nbsp;2007-2008&nbsp;(c)&nbsp;-&nbsp;</span><span class="src-doc-inlinetag">{@link&nbsp;http://www.walkeralencar.com&nbsp;Walker&nbsp;de&nbsp;Alencar}</span><span class="src-doc">&nbsp;&lt;contato@walkeralencar.com&gt;</span></div></li>
+<li><div class="src-line"><a name="a18"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@license</span><span class="src-doc">&nbsp;&nbsp;&nbsp;http://www.gnu.org/licenses/lgpl.txt&nbsp;LGPL</span></div></li>
+<li><div class="src-line"><a name="a19"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@link</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.walkeralencar.com/</span></div></li>
+<li><div class="src-line"><a name="a20"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@link</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://code.google.com/p/sniphpets</span></div></li>
+<li><div class="src-line"><a name="a21"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@version</span><span class="src-doc">&nbsp;&nbsp;&nbsp;2.0&nbsp;beta&nbsp;UTF-8</span></div></li>
+<li><div class="src-line"><a name="a22"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a23"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a24"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a25"></a><span class="src-doc">&nbsp;*&nbsp;Básico&nbsp;(recomendado)</span></div></li>
+<li><div class="src-line"><a name="a26"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a27"></a><span class="src-inc">include_once</span><span class="src-sym">(</span><span class="src-str">'base.php'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a28"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a29"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a30"></a><span class="src-doc">&nbsp;*&nbsp;Datas&nbsp;(Opcional)</span></div></li>
+<li><div class="src-line"><a name="a31"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a32"></a><span class="src-inc">include_once</span><span class="src-sym">(</span><span class="src-str">'date.php'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a33"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a34"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a35"></a><span class="src-doc">&nbsp;*&nbsp;Javascript&nbsp;(Opcional)</span></div></li>
+<li><div class="src-line"><a name="a36"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a37"></a><span class="src-inc">include_once</span><span class="src-sym">(</span><span class="src-str">'javascripts.php'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a38"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a39"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a40"></a><span class="src-doc">&nbsp;*&nbsp;Classes&nbsp;(Opcional)</span></div></li>
+<li><div class="src-line"><a name="a41"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a42"></a><span class="src-inc">include_once</span><span class="src-sym">(</span><span class="src-str">'classes.php'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a43"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a44"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a45"></a><span class="src-doc">&nbsp;*&nbsp;Modules&nbsp;(Opcional)</span></div></li>
+<li><div class="src-line"><a name="a46"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;Depende&nbsp;de&nbsp;'classes.php'</span></div></li>
+<li><div class="src-line"><a name="a47"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a48"></a><span class="src-inc">include_once</span><span class="src-sym">(</span><span class="src-str">'modules.php'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a49"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a50"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a51"></a><span class="src-doc">&nbsp;*&nbsp;Extras&nbsp;(Opcional)</span></div></li>
+<li><div class="src-line"><a name="a52"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a53"></a><span class="src-inc">include_once</span><span class="src-sym">(</span><span class="src-str">'extra.php'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a54"></a><span class="src-php">?&gt;</span></div></li>
+</ol>
+</span></div>
+        <div class="credit">
+		    <hr class="separator" />
+		    Documentation generated on Mon, 16 Feb 2009 20:44:04 -0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
